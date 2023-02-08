@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Rubik:wght@400;700&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Chivo', sans-serif;
+    color: rgb(68 68 68);
+    }
+
+img {
+    width: 100%;
+}
+
+.page-bg {
+    background-image: url('./images/background-circle.png');
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: translateZ(0);
+}
+
+section {
+    position: relative;
+    transition: opacity .5s ease-in, min-height .5s ease-in, height .5s ease-in;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.logo {
+    max-width: 160px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+.headline {
+    text-align: center;
+    padding: 1vw;
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    line-height: 1.25;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sub-title {
+    font-size: 1.3rem;
+    padding: 0 56px;
+}
+
+hr{
+    height: 0;
+    width: 15%;
+    margin: 12px auto;
+    border: none;
+    border-bottom-width: 6px;
+    border-bottom-color: rgb(206,4,27);
+    border-bottom-style: solid;
+}
+
+/* section 2 */
+.recommend-title{
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card{
+    background-color: rgba(255,255,255,0.6);
+    border-color: rgba(255,255,255,0.6);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 24px 20px;
+    border-radius: 15px;
+}
+
+.btn{
+    border-color: rgb(206,4,27);
+    background: rgb(206,4,27);
+    color: rgba(255,255,255,1);
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.3rem;
+    font-family: 'Rubik', sans-serif;
+}
+footer p{
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+
+}
+
+/* media quiry */
+
+@media only screen and (max-width: 576px) {
+    .headline{
+        max-width: 95%;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media only screen and (min-width:577px) and (max-width: 768px){
+    .headline{
+        max-width: 95%;
+    }
+  }
